@@ -1,0 +1,5 @@
+name = "file-sorter"
+compatibility_date = "2025-03-23"
+
+[site]
+bucket = "./dist"
