@@ -58,6 +58,7 @@ function App() {
       setDirHandle(handle);
       alert(`Directory "${handle.name}" selected successfully!`);
     } catch (error) {
+      // @ts-expect-error because error is not a DOMException
       if (error.name !== "AbortError") {
         console.error("Error selecting directory:", error);
         alert("Failed to select directory. Please try again.");
@@ -83,7 +84,7 @@ function App() {
       }
 
       const fileEntries: { name: string; entry: FileSystemFileHandle }[] = [];
-
+      // @ts-expect-error because dirHandle is not null
       for await (const [name, entry] of dirHandle.entries()) {
         if (entry.kind === "file") {
           fileEntries.push({ name, entry });
