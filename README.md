@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# File Organizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple file organizer that sorts all files in the chosen directory into **Documents, Images, Music, and Videos** folders in just two clicks!
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Uses the **File System Access API** (works in modern browsers like Chrome/Edge).
+- Automatically creates necessary folders (if none were present).
+- Moves files based on extensions.
+- Works **entirely in the browser**, no server needed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📷 Demo
+![2025-03-23 16-39-57](https://github.com/user-attachments/assets/a2057d8d-8c6e-4d1f-9aa4-5aae65ce2c39)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 How to Use
+1. Click the **folder icon** to select a directory.
+2. Click the **"Sort" button**, and all files will be moved to the correct folders.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 💻 Development & Setup
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/YourUsername/file-organizer.git
+   cd file-organizer
+2. Install dependencies:
+   ```sh
+   npm install
+4. Run the project:
+   ```sh
+   npm start
