@@ -1,6 +1,7 @@
 # File Organizer
 
 A simple file organizer that sorts all files in the chosen directory into **Documents, Images, Music, and Videos** folders in just two clicks!
+You can use it here: https://file-organizer.pages.dev/;
 
 ## 🚀 Features
 - Uses the **File System Access API** (works in modern browsers like Chrome/Edge).
